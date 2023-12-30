@@ -8,13 +8,15 @@
   </head>
   <body>
     <main class="container">
-      <section class="comment-container open">
+      <section class="comment-container">
         <div class="comment-card">
           <h1>Ask HN: The first comment</h1>
           <ul>
             <li>68 points by someone</li>
             <li>6 months ago</li>
-            <li class="show-comments">137 comments</li>
+            <li class="show-comments" onclick="toggleComments(this)">
+              137 comments
+            </li>
           </ul>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta,
@@ -24,12 +26,12 @@
           </p>
         </div>
       </section>
-      <section class="comment-container open">
+      <section class="comment-container hidden">
         <div class="comment-card">
           <ul>
             <li>someone</li>
             <li>6 months ago</li>
-            <li class="show-comments">2 more</li>
+            <li class="show-comments" onclick="toggleComments(this)">2 more</li>
           </ul>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus
@@ -38,12 +40,14 @@
             nostrum consequuntur, repellat quis rerum.
           </p>
         </div>
-        <section class="comment-container">
+        <section class="comment-container hidden">
           <div class="comment-card">
             <ul>
               <li>someone</li>
               <li>6 months ago</li>
-              <li class="show-comments">2 more</li>
+              <li class="show-comments" onclick="toggleComments(this)">
+                2 more
+              </li>
             </ul>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -53,12 +57,14 @@
             </p>
           </div>
         </section>
-        <section class="comment-container">
+        <section class="comment-container hidden">
           <div class="comment-card">
             <ul>
               <li>someone</li>
               <li>6 months ago</li>
-              <li class="show-comments">2 more</li>
+              <li class="show-comments" onclick="toggleComments(this)">
+                2 more
+              </li>
             </ul>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -69,12 +75,12 @@
           </div>
         </section>
       </section>
-      <section class="comment-container open">
+      <section class="comment-container hidden">
         <div class="comment-card">
           <ul>
             <li>someone</li>
             <li>6 months ago</li>
-            <li class="show-comments">2 more</li>
+            <li class="show-comments" onclick="toggleComments(this)">2 more</li>
           </ul>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus
@@ -84,12 +90,12 @@
           </p>
         </div>
       </section>
-      <section class="comment-container open">
+      <section class="comment-container hidden">
         <div class="comment-card">
           <ul>
             <li>someone</li>
             <li>6 months ago</li>
-            <li class="show-comments">2 more</li>
+            <li class="show-comments" onclick="toggleComments(this)">2 more</li>
           </ul>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus
@@ -98,12 +104,14 @@
             nostrum consequuntur, repellat quis rerum.
           </p>
         </div>
-        <section class="comment-container open">
+        <section class="comment-container hidden">
           <div class="comment-card">
             <ul>
               <li>someone</li>
               <li>6 months ago</li>
-              <li class="show-comments">2 more</li>
+              <li class="show-comments" onclick="toggleComments(this)">
+                2 more
+              </li>
             </ul>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -115,5 +123,6 @@
         </section>
       </section>
     </main>
+    <script src="index.js"></script>
   </body>
 </html>

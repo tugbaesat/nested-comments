@@ -39,12 +39,12 @@ a {
   background-color: black;
   padding: 0.5rem 4rem;
 }
-.comment-container {
-  display: none;
+.comment-text {
+  /* display: none; */
   position: relative;
 }
-.comment-container.open {
-  display: block;
+.comment-text.open {
+  /* display: block; */
 }
 .comment-container::before {
   content: "";
@@ -80,4 +80,7 @@ a {
 }
 .show-comments {
   cursor: pointer;
+}
+.hidden {
+  display: none;
 }
